@@ -1,0 +1,83 @@
+    1  bash
+    2  pwd
+    3  uname -a
+    4  clear
+    5  ls
+    6  pwd
+    7  ls
+    8  ifconfig
+    9  sudo apt install net-tools
+   10  sudo apt-get install openssh server
+   11  sudo apt-get update
+   12  sudo apt-get install openssh server
+   13  sudo apt-get install openssh-server
+   14  clear
+   15  ifconfig
+   16  clear
+   17  ssh -i C:\Users\ashwin.ramesh\Downloads\ashwin_aws.pem ec2-user@13.50.4.158
+   18  ssh -i /mnt/c/Users/ashwin.ramesh/Downloads/ashwin_aws.pem ec2-user@13.50.4.158
+   19  clear
+   20  cp /mnt/c/Users/ashwin.ramesh/Downloads/ashwin_aws.pem ~/
+   21  ssh -i ashwin_aws.pem ec2-user@13.50.4.158
+   22  chmod 400 ashwin_aws.pem
+   23  ssh -i ashwin_aws.pem ec2-user@13.50.4.158
+   24  clear
+   25  ssh -i ashwin_aws.pem ec2-user@51.21.224.149
+   26  ssh-keygen -t rsa -b 4096 -c "auto@aws"
+   27  ssh-keygen -t rsa -b 4096 -C "auto@aws"
+   28  ls
+   29  pwd
+   30  ssh -i ashwin_aws.pem ec2-user@51.21.224.149
+   31  ssh ec2-user@51.21.224.149
+   32  history
+   33  clear
+   34  pwd
+   35  vi input.txt
+   36  cat input.txt
+   37  touch output.txt
+   38  vi shift.sh
+   39  ls
+   40  sh shift.sh
+   41  cat shift.sh
+   42  sh shift.sh input.txt output.txt 3
+   43  vi shift.sh
+   44  sh shift.sh input.txt output.txt 3
+   45  sh shift.sh input.txt 3
+   46  sh shift.sh input.txt 1
+   47  chmod +x shift.sh
+   48  sh shift.sh input.txt output.txt 3
+   49  ./shift.sh input.txt output.txt 3
+   50  cad output.txt
+   51  cat output.txt
+   52  vi shift.sh
+   53  ./shift.sh input.txt output.txt 3
+   54  cat output.txt
+   55  bash shift.sh input.txt output.txt 3
+   56  vi output.txt
+   57  vi shift.sh
+   58  bash shift.sh input.txt output.txt 3
+   59  vi output.txt
+   60  vi shift.sh
+   61  bash shift.sh input.txt output.txt 4
+   62  cat output.txt
+   63  vi output.txt
+   64  vi shift.sh
+   65  bash shift.sh input.txt output.txt 4
+   66  cat output.txt
+   67  cat shift.sh
+   68  clear
+   69  vi orders.csv
+   70  awk -F, 'BEGIN {OFS=","} 
+   71  NR==1 {print; next} 
+   72  {
+   73      $6 = int(($6 * 1.10) + 0.5)  # increase by 10% and round
+   74      print
+   75  }' orders.csv > updated_orders.csv
+   76  mv updated_orders.csv orders.csv
+   77  vi orders.csv
+   78  ls
+   79  vi orders.csv 
+   80  ls
+   81  rm orders.csv 
+   82  ls
+   83  vi orders.csv
